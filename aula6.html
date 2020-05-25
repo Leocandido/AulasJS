@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6</title>
+</head>
+<body><script>
+
+    // function mostrarNome(nome="Fulano", idade=10) { 
+    //             console.log(nome, idade)
+    //         }
+
+
+    //         mostrarNome("Henrique", 17)
+    //         mostrarNome("Volare", 5)
+    //         mostrarNome("Cadu", 14)
+
+
+
+    // function verificarMaioridade(idade=0) {        
+    //         if(idade >= 18){
+    //             return 1
+    //         }
+    //         else{
+    //             return false
+    //         }
+    //     }
+
+    //     if(verificarMaioridade(20) == true){
+    //         console.log("Você entrou no pornhub")
+    //     }
+    //     else{
+    //         console.log("Você não pode entrar no pornhub")
+    //     }
+
+
+
+    // Antes de 2015 -> var
+    // Depois de 2015 -> const / let
+
+    // const nome = "Henrique"
+    // nome = "Volare" -> Erro
+
+
+
+    //DESAFIO1
+    let tipoDeConta = prompt("soma / subtração / divisão / multiplicação")
+    let num1 = parseInt(prompt("Digite um número"))
+    let num2 = parseInt(prompt("Digite outro número"))
+
+    function calculo(tipoDeConta, num1, num2){
+        if(tipoDeConta == "soma"){
+            return num1 + num2
+        }
+        if(tipoDeConta == "subtração"){
+            return num1 - num2
+        }
+        if(tipoDeConta == "divisão"){
+            return num1 / num2
+        }
+        if(tipoDeConta == "multiplicação"){
+            return num1 * num2
+        }
+
+    }
+    
+    console.log(calculo(tipoDeConta, num1, num2))
+
+
+</script>
+    
+</body>
+</html>
